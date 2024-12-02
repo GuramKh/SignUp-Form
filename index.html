@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Learn to Code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time.
+               Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+        
+        <div class="form">
+            <header>
+                <p><strong>Try it free for 7 days</strong> then 20$/mo. thereafter</p>
+            </header>
+            
+            <form id="signup-form" novalidate>
+                <div class="input-group">
+                    <input id="firstName" name="firstName" type="text" placeholder="First Name" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="input-group">
+                    <input id="lastName" name="lastName" type="text" placeholder="Last Name" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="input-group">
+                    <input id="email" name="email" type="email" placeholder="Email Address" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="input-group">
+                    <input id="password" name="password" type="password" placeholder="Password" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <button type="submit" class="btn">CLAIM YOUR FREE TRIAL</button>
+                
+                <p class="terms">By clicking the button you are agreeing to our <a href="#">Terms and Services</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url(./images/bg-intro-desktop.png), var(--primary-red);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  gap: 2rem;
+  align-items: center;
+}
+
+.text {
+  width: 45%;
+  padding: 2rem;
+  color: white;
+}
+
+.text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.form {
+  width: 55%;
+}
+
+header {
+  background-color: var(--accent-blue);
+  color: white;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.15);
+}
+
+form {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--grayish-blue);
+  border-radius: 0.3rem;
+  font-weight: 600;
+}
+
+input:focus {
+  border-color: var(--accent-blue);
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px hsl(154, 59%, 45%);
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.terms {
+  color: var(--grayish-blue);
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.terms a {
+  color: var(--primary-red);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.error {
+  border: 2px solid var(--primary-red);
+  background-image: url("./images/icon-error.svg");
+  background-position: 95% center;
+  background-repeat: no-repeat;
+}
+
+.error-message {
+  color: var(--primary-red);
+  font-size: 0.75rem;
+  font-style: italic;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      width: 90%;
+      padding: 2rem 0;
+  }
+  
+  .text {
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+  }
+  
+  .form {
+      width: 100%;
+  }
+  
+  .text h1 {
+      font-size: 2rem;
+  }
+}
